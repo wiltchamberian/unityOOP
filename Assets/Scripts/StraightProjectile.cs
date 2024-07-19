@@ -14,11 +14,13 @@ public class StraightProjectile : Projectile
     // Update is called once per frame
     void Update()
     {
+        Move();
     }
 
     // POLYMORPHISM
     public override void Move()
     {
         transform.position = transform.position + velocity * Time.deltaTime;
+        base.Move();
     }
 }

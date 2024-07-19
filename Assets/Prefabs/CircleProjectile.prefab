@@ -120,5 +120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cd2c339d61d9bf4e9b35e8144e9c123, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radius: 0
-  omega: 0
+  velocity: {x: 0, y: 0, z: 5}
+  lifeTime: 5
+  radius: 1
+  omega: 5

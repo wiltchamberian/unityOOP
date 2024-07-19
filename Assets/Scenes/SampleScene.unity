@@ -534,9 +534,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectiles:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: -4573485399216382713, guid: 22b4f141d4349714c806fd77073baea6, type: 3}
+  - {fileID: 1587846309571836917, guid: 03286cf9afc9c9c409645a1fd3668aeb, type: 3}
+  - {fileID: -8669389635007280297, guid: 82c52821b95122e409f3c14fad7e6043, type: 3}
+  speed: 3
 --- !u!1001 &8548085183000537275
 PrefabInstance:
   m_ObjectHideFlags: 0
