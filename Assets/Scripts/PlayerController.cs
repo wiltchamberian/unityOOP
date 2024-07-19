@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 enum ProjectileType
@@ -12,6 +13,7 @@ enum ProjectileType
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] Projectile[] projectiles;
+    [SerializeField] float speed;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +23,10 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        float horizontal = Input.GetAxis("Horizontal") * speed * Time.deltaTime;
+        float vertical = Input.GetAxis("Vertical") * speed * Time.deltaTime;
+        transform.Translate(new Vector3(horizontal, 0, vertical));
+     
         if(Input.GetKeyDown(KeyCode.J)){
             int select = Random.Range(0, 3);
             Spawn(select);
